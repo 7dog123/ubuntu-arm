@@ -13,4 +13,4 @@ RUN DEBIAN_FRONTEND=noninteractive TZ=US/Central \
     libxi-dev:armhf libxinerama-dev:armhf libxrandr-dev:armhf \
     libxxf86vm-dev:armhf libfreetype6-dev:armhf \
     libfontconfig1-dev:armhf gcc-10-arm-linux-gnueabihf \
-    g++-10-arm-linux-gnueabihf 
+    g++-10-arm-linux-gnueabihf ninja-build
