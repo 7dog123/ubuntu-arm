@@ -2,6 +2,8 @@ FROM ubuntu:focal-20220922@sha256:9488eba63bece0e05cd2cd84ce4dbe2710c8666f10259b
 
 RUN dpkg --add-architecture armhf && apt-get update
 
+RUN rm -rf /etc/apt/apt.conf.d/*
+
 RUN DEBIAN_FRONTEND=noninteractive TZ=US/Central \
     apt-get install -y gcc-10 g++-10 \
     cmake libgl-dev libvulkan-dev libpulse-dev libx11-dev \
